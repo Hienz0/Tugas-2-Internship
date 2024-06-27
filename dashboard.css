@@ -2,8 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+   
     padding: 10px;
+    background-color: white;
+     border-bottom-left-radius: 15px; /* Sesuaikan dengan radius yang Anda inginkan */
+     border-bottom-right-radius: 15px;   
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.4);
 }
 
 .container-fluid {
