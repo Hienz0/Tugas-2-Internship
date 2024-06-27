@@ -5,7 +5,7 @@
    
     padding: 10px;
     background-color: white;
-     border-bottom-left-radius: 15px; /* Sesuaikan dengan radius yang Anda inginkan */
+     border-bottom-left-radius: 15px; 
      border-bottom-right-radius: 15px;   
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.4);
 }
