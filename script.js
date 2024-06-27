@@ -80,3 +80,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // Your code to run since DOM is loaded and ready
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var modal = document.getElementById("searchModal");
+  var btn = document.getElementById("searchIcon");
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function() {
+      modal.style.display = "block";
+  }
+
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+});
