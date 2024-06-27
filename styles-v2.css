@@ -43,12 +43,12 @@
 	
     #sign-in {
     background-color: #fff;
-    box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+    
 
     
     }
     #blok{
-        box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.4); /* Optional: adds a subtle shadow */
+		box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
     }
 
     .btn-toggle-password {
@@ -62,8 +62,9 @@
    .form-control {
     color: #555;
     border: 1px solid #ced4da; 
-    border-right: none;
+
   }
+  
 
   input.form-control {
     color: #555;
@@ -73,5 +74,21 @@
     height: 80vh; 
     align-items: center;
   } */
+
+  .wrapper{
+	background-color: #fff;
+  }
+
+  .company-name {
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 18px;
+  }
+
+  .password-input {
+	border-right: none;
+  }
+
+ 
 
     
