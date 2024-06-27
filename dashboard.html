@@ -29,34 +29,53 @@
 
 <body id="body-pd">
     <header class="header" id="header">
-        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
-        <a class="navbar-brand" href="#"> 
-          <img src="./images/pepito_logo.png" alt="Logo" width="100" height="50" class="d-inline-block align-text-top">
-          
-        </a>
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i>
+          <img src="./images/pepito_logo.png" alt="Logo" width="100" height="50" class="d-inline-block align-text-top logo" >
+        </div>
+       
         
         <!-- yuda -->
 
         <nav class="header  fixed-top" >
           <div class="container-fluid">
             <a class="navbar-brand" href="#"> 
-              <img src="./images/pepito_logo.png" alt="Logo" width="100" height="50" class="d-inline-block align-text-top">
               
             </a>
             <form class="search" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-            <div class="nav-link dropdown ms-3">
-              <a href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://annedece.sirv.com/Images/user-vector.jpg" alt="Profile" class="rounded-circle" style="width: 40px;">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+              <button class="btn btn-outline-success search-button" type="button">Search</button>
+          </form>
+          <button class="btn btn-outline-success search-icon" type="button" id="searchIcon">
+              <i class="fas fa-search"></i>
+          </button>
+      
+          <!-- The Modal -->
+          <div id="searchModal" class="modal">
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <form class="search-modal-form">
+                      <input class="form-control" type="search" placeholder="Search" aria-label="Search" id="modalSearchInput">
+                      <button class="btn btn-outline-success resBut" type="submit">Search</button>
+                  </form>
+              </div>
+          </div>
+
+            <div class="nav-link dropdown ms-3 d-flex align-items-center">
+              <a href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="d-flex align-items-center text-decoration-none">
+                  <img src="https://annedece.sirv.com/Images/user-vector.jpg" alt="Profile" class="rounded-circle" style="width: 40px;">
+                  <span class="ms-2" style="color: black;">Nama Pengguna</span>
+                  <i class="fas fa-caret-down ms-1" style="color: black;"></i> <!-- Tambahkan ikon panah ini -->
               </a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
+                  <span class="ms-3" style="color: black;">Nama Pengguna</span>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
               </ul>
-            </div>
+          </div>
+          
+          
           </div>
         </nav>
       
