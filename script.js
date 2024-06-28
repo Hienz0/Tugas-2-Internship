@@ -100,3 +100,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   }
 });
+
+// sign in / redierect to dashboard
+document.getElementById('sign-in-button').addEventListener('click', function() {
+  window.location.href = 'dashboard.html';
+});
