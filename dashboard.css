@@ -81,7 +81,7 @@ a {
     background-color: var(--first-color);
     padding: .5rem 1rem 0 0;
     transition: .5s;
-    z-index: var(--z-fixed)
+    z-index: var(--z-fixed);
 }
 
 .nav {
@@ -272,7 +272,7 @@ a {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
@@ -289,6 +289,7 @@ a {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    z-index: 9999;
 }
 
 .close {
